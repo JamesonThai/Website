@@ -1,0 +1,49 @@
+/*
+  Stylesheet for website
+  Table of Contents:
+  - General css
+  - body
+    - Header
+*/
+
+/* General CSS */
+body,html{
+  height:100%;
+}
+body{
+  margin-top: -20px;
+  /*  Having some whitespace at top for some reason*/
+}
+* {
+  box-sizing: border-box;
+}
+/*  Body */
+  /* bg-img */
+.bg-img{
+  height: 60%;
+  margin:0;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp  */
+  /*  Header */
+.header{
+  background-image: url("../imgAssets/SoccerFieldOG.jpg");
+}
+  /* About Me */
+.AboutMe{
+  background-image: url("../imgAssets/abstract-art-artistic-1020315.jpg");
+}
+  /*  GenInfo */
+.GenInfo{
+  background-image: url("../imgAssets/architecture-background-buildings-218983.jpg");
+}
+  /*  Repos */
+.repos{
+  background-image: url("../imgAssets/background-blur-clean-531880.jpg");
+}
+  /* Social Information */
+.Social{
+  background-image: url("../imgAssets/background-boardwalk-clouds-808465.jpg");
+}
