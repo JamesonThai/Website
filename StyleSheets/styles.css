@@ -11,7 +11,7 @@ body,html{
   height:100%;
 }
 body{
-  margin-top: -20px;
+  /* margin-top: -20px; */
   /*  Having some whitespace at top for some reason*/
 }
 * {
@@ -20,20 +20,54 @@ body{
 /*  Body */
   /* bg-img */
 .bg-img{
-  height: 60%;
+  height: 80%;
   margin:0;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
+#content{
+  height: 100%;
+}
 /* https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp  */
+  /*  Nav Bar */
+.NavBar{
+  background-color: #333;
+  overflow: hidden;
+}
+.NavBar a {
+  float:left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.NavBar a:hover{
+  background-color: #ddd;
+  color:black;
+}
+
+.NavBar a.active{
+  background-color: #4CAF50;
+  color:white;
+}
+  /* Make navbar sticky  */
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
   /*  Header */
 .header{
   background-image: url("../imgAssets/SoccerFieldOG.jpg");
+  margin-top: -20px;
 }
   /* About Me */
 .AboutMe{
-  background-image: url("../imgAssets/abstract-art-artistic-1020315.jpg");
+  /* background-image: url("../imgAssets/abstract-art-artistic-1020315.jpg"); */
+  background-color: coral;
 }
   /*  GenInfo */
 .GenInfo{
