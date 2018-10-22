@@ -90,7 +90,9 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 }
   /*  Header */
 #header{
+  /* background: #222; */
   background-image: url("../imgAssets/SoccerFieldOG.jpg");
+  /* color: white; */
 }
   /* About Me */
 #AboutMe{
@@ -152,5 +154,6 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 }
   /* Social Information */
 #Social{
-  background-image: url("../imgAssets/background-boardwalk-clouds-808465.jpg");
+  /* background-image: url("../imgAssets/SoccerFieldOG.jpg"); */
+  background-image: url("../imgAssets/architecture-background-buildings-218983.jpg");
 }
