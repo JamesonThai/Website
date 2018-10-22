@@ -9,16 +9,10 @@ document.getElementById("tab3").onmouseout = function() { hoverOut('tab3') }
 document.getElementById("tab4").onmouseout = function() { hoverOut('tab4') }
 function hoverFunction(x){
   var temp = document.getElementById(x);
-  // temp.addEventListener("mouseover", function(event){
-  //    event.target.classList.add("taba");
-  // }, false);
   event.target.classList.add("taba");
 }
 
 function hoverOut(x){
   var temp = document.getElementById(x);
-  // temp.addEventListener("mouseout", function(event){
-  //    event.target.classList.remove("taba");
-  // }, false);
   event.target.classList.remove("taba");
 }
