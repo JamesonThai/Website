@@ -9,47 +9,46 @@
     <!-- Bootstrap Call -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Calling Stylesheet -->
     <link rel="stylesheet" type="text/css" href ="StyleSheets/styles.css">
   </head>
   <!-- Body Information -->
   <body>
-    <!--  Navigation Bar -->
-    <nav class ="NavBar">
-      <a class = "active" href="#home" > Home </a>
-      <a href="#projects"> Projects </a>
-      <a href="#aboutMe"> FAQ </a>
-      <a href="#contact"> Contact </a>
-      <a href="#blog"> Blog </a>
-    </nav>
     <!--  Creation of header -->
-    <div class="bg-img header">
+    <div class="container-fluid" id="header">
       <h1> Welcome to My Website! </h1>
       <p> Temporary website created by me, Jameson. </p>
     </div>
+    <!--  Navigation Bar -->
+    <nav id ="NavBar">
+      <a class = "active" href="#home" >  Home  </a>
+      <a href="#projects"> <span> Projects </span> </a>
+      <a href="#aboutMe"> <span> FAQ </span> </a>
+      <a href="#contact"> <span> Contact </span> </a>
+      <a href="#blog"> <span> Blog </span> </a>
+    </nav>
     <!-- Content  -->
     <div id="content">
       <!--  About Me-->
-      <div class="bg-img AboutMe">
+      <div class="container-fluid" id="AboutMe">
         <p> Some Information about me </p>
       </div>
-      <!--  Summary One-->
-      <div class="bg-img GenInfo">
-        <p> Just some general information here
-        </p>
-      </div>
       <!-- Content of Repos -->
-      <div class="bg-img repos">
+      <div class="container-fluid" id="repos">
         <p> Information here for Repos </p>
       </div>
-      <!-- Social Information -->
-      <div class="bg-img Social">
+      <!--  General Information -->
+      <div class="container-fluid" id="GenInfo">
+        <p> Just some general information here </p>
+      </div>
+      <!-- Social Information/Footer -->
+      <div class="container-fluid" id="Social">
         <p> Blog Information </p>
         <a> Github </a>
         <a> Linkedin </a>
         <a> blogLink </a>
       </div>
-      <!-- Footer -->
-    </div
+    </div>
   </body>
   <!-- Scripts -->
   <!--  Sticky -->

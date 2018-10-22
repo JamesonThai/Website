@@ -1,0 +1,181 @@
+/*
+Style sheet for Alyssia Website
+Table of Contents:
+  - General CSS
+  - First Page: Background
+  - Second Page: Summary
+  - Third Pgae: Background
+  - Fourth Page: Summary;
+
+*/
+body, html{
+  height: 100%;
+}
+/*General CSS*/
+
+/* h1 {
+  position: absolute;
+  top: 200px;
+  left: -10px;
+  width: 101.5%;
+  color: white;
+  font: bold 24px/45px Georgia, Sans-Serif;
+  letter-spacing: -1px
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+h1 span.spacer {
+   padding:0 5px;
+} */
+
+/* For the First Page: Background*/
+#back1{
+  background-image: url('imgAssets/SoccerFieldOG.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#firstImg{
+  text-align: center;
+}
+#firstImg h1{
+  background: rgba(0,0,0,0);
+  left: 0px;
+  margin-top: 5%;
+  font-size: 40px;
+}
+#firstImg p{
+  text-align: center;
+  font-size: 30px;
+  margin-top: -2%;
+}
+
+#joinButton{
+    background-image: linear-gradient(-180deg, #00AEFF 0%, #007BFF 100%);
+    border: 0.11px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 30px;
+    color: white;
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 43%;
+ }
+
+#joinButton:hover{
+  background-image: linear-gradient(-180deg, #0095E6 0%, #0062E6 100%);
+}
+#loginButton{
+  background-color: transparent;
+  width: 5%;
+  height: 4%;
+  color: white;
+  margin-top: 1%;
+  margin-left: 90%;
+}
+
+/*For the Second Page: Summary*/
+#summary{
+  background-color: #2d3e48;
+  font-size: 30px;
+  text-decoration-color: white;
+  text-align: center;
+  height: 500px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+/* For the Third Page: Background*/
+#back2{
+  background-image: url("../imgAssets/background-blur-clean-531880.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* For the Fourth Page: Summary*/
+#summary2{
+  background-color: #1eb0fc;
+  font-size: 25px;
+  text-decoration-color: white;
+  text-align: center;
+  /*height: 700px; if it was side by side*/
+  height: 500px;
+  display: table;
+  width: 100%;
+}
+
+#col h2{
+  font-size: 40px;
+  font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#col p{
+  font-size: 25px;
+  font-family: Helvetica Neue;
+}
+/*#col{
+  display: table-cell;
+  padding: 10px;
+  width: 700px;
+}
+#col h2{
+  font-size: 35px;
+}*/
+
+/* For the 5th page: Summary*/
+#back3{
+  background-image: url("../imgAssets/background-boardwalk-clouds-808465.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*For the 6th page: Summary*/
+#summary3{
+  /*background-color: lightblue;*/
+  background-color: #2d3e48;
+  font-size: 30px;
+  text-decoration-color: white;
+  text-align: center;
+  height: 600px;
+  color: white;
+}
+
+#back4{
+  /*background-image: url("background4.jpg");*/
+  background-image: url("bg.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+}
+#placeholder{
+  height: 35%;
+  margin-top: 10%;
+  position: relative;
+}
+
+#sponsorRow{
+  margin-top: 25%;
+  margin-left: 15%;
+}
+#sponsorRow img{
+  width: 15%;
+  margin-left: 5%;
+}
+#adjustment{
+  height: 90px;
+
+}

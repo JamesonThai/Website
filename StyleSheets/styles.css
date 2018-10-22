@@ -10,74 +10,115 @@
 body,html{
   height:100%;
 }
-body{
-  /* margin-top: -20px; */
-  /*  Having some whitespace at top for some reason*/
-}
+
 * {
   box-sizing: border-box;
 }
 /*  Body */
-  /* bg-img */
-.bg-img{
-  height: 80%;
-  margin:0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#content{
-  height: 100%;
-}
 /* https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp  */
   /*  Nav Bar */
-.NavBar{
+#NavBar{
   background-color: #333;
   overflow: hidden;
 }
-.NavBar a {
+
+#NavBar a {
   float:left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  /*  Part for animation */
+  cursor: pointer;
+  translation: all 0.5s;
 }
 
-.NavBar a:hover{
+#NavBar span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#NavBar span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#NavBar:hover span{
+  padding-right: 25px;
+}
+
+#NavBar:hover span:after {
+  opacity:1;
+  right: 0;
+}
+
+/* #NavBar a:hover{
   background-color: #ddd;
   color:black;
-}
+} */
 
-.NavBar a.active{
+#NavBar a.active{
   background-color: #4CAF50;
   color:white;
 }
   /* Make navbar sticky  */
-.sticky {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
+/* bg-img */
+#header, #repos, #Social{
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content{
+  height: 100%;
+}
   /*  Header */
-.header{
+#header{
   background-image: url("../imgAssets/SoccerFieldOG.jpg");
-  margin-top: -20px;
 }
   /* About Me */
-.AboutMe{
+#AboutMe{
   /* background-image: url("../imgAssets/abstract-art-artistic-1020315.jpg"); */
-  background-color: coral;
+  background-color: #2d3e48;
+  font-size: 30px;
+  text-decoration-color: white;
+  text-align: center;
+  height: 60%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
 }
-  /*  GenInfo */
-.GenInfo{
-  background-image: url("../imgAssets/architecture-background-buildings-218983.jpg");
-}
-  /*  Repos */
-.repos{
+/*  Repos */
+#repos{
   background-image: url("../imgAssets/background-blur-clean-531880.jpg");
 }
+  /*  GenInfo */
+#GenInfo{
+  /* background-image: url("../imgAssets/architecture-background-buildings-218983.jpg"); */
+  background-color: #1eb0fc;
+  font-size: 30px;
+  text-decoration-color: white;
+  text-align: center;
+  height: 60%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+}
   /* Social Information */
-.Social{
+#Social{
   background-image: url("../imgAssets/background-boardwalk-clouds-808465.jpg");
 }
