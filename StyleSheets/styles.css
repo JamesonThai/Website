@@ -50,19 +50,15 @@ body,html{
   transition: 0.5s;
 }
 
-#NavBar:hover span{
+#NavBar:hover .taba{
   padding-right: 25px;
 }
 
-#NavBar:hover span:after {
-  opacity:1;
+#NavBar:hover .taba:after {
+  opacity: 1;
   right: 0;
 }
 
-/* #NavBar a:hover{
-  background-color: #ddd;
-  color:black;
-} */
 
 #NavBar a.active{
   background-color: #4CAF50;
