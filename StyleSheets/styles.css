@@ -14,18 +14,25 @@ body,html{
 * {
   box-sizing: border-box;
 }
+
+a: hover{
+  cursor: pointer;
+}
+
 /*  Body */
 /* https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp  */
+/*
+Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav  */
   /*  Nav Bar */
 #NavBar{
   background-color: #333;
   overflow: hidden;
-  margin-top: -55px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #NavBar a {
   float:left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -62,13 +69,13 @@ body,html{
 
 #NavBar a.active{
   background-color: #4CAF50;
-  color:white;
 }
   /* Make navbar sticky  */
-  .sticky {
-    position: fixed;
-    width: 100%;
-  }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /* bg-img */
 #header, #repos, #Social{
@@ -87,29 +94,58 @@ body,html{
 }
   /* About Me */
 #AboutMe{
-  /* background-image: url("../imgAssets/abstract-art-artistic-1020315.jpg"); */
   background-color: #2d3e48;
-  font-size: 30px;
   text-decoration-color: white;
   text-align: center;
-  height: 60%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: white;
 }
+#AboutMe h1{
+  font-size: 6.5vw;
+}
+
+#AboutMe #aboutTable{
+  margin: 3%;
+  border-spacing: 20px;
+  border-collapse: separate;
+}
+#aboutTable #MeInfo{
+  text-align: left;
+  font-size: 1.8vw;
+  width: 80%;
+}
+#aboutTable #Project_Links{
+  font-size: 1.8vw;
+}
+
 /*  Repos */
 #repos{
-  /* background-image: url("../imgAssets/background-blur-clean-531880.jpg"); */
   background-image: url("../imgAssets/abstract-art-artistic-1020315.jpg")
 }
+#repos table{
+  position: relative;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+
+#repos h1{
+  font-size: 6.5vw;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration-color: white;
+}
+
   /*  GenInfo */
 #GenInfo{
   /* background-image: url("../imgAssets/architecture-background-buildings-218983.jpg"); */
-  background-color: #1eb0fc;
-  font-size: 30px;
+  background-color: #3B5998 ;
   text-decoration-color: white;
   text-align: center;
-  height: 60%;
+  font-size: 8vw;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: white;

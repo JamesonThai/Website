@@ -17,40 +17,74 @@
     <!--  Creation of header -->
     <div class="container-fluid" id="header">
       <h1> Welcome to My Website! </h1>
-      <p> Temporary website created by me, Jameson. </p>
+      <p> Temporary website created by me, Jameson. Although it's still under construction. </p>
     </div>
     <!--  Navigation Bar -->
     <nav id ="NavBar">
-      <a class = "active" href="#home" >  Home  </a>
-      <a href="#projects"> <span id="tab1"> Projects </span> </a>
-      <a href="#aboutMe"> <span id="tab2"> FAQ </span> </a>
-      <a href="#contact"> <span id="tab3"> Contact </span> </a>
-      <a href="#blog"> <span id="tab4"> Blog </span> </a>
+      <a class = "active" href="index.html" >  Home  </a>
+      <a href="#projects" onclick="notYetLinked()"> <span id="tab1"> Projects </span> </a>
+      <a href="#aboutMe" onclick="notYetLinked()"> <span id="tab2"> FAQ </span> </a>
+      <a href="#contact" onclick="notYetLinked()"> <span id="tab3"> Contact </span> </a>
+      <a href="#blog" onclick="notYetLinked()"> <span id="tab4"> Blog </span> </a>
     </nav>
     <!-- Content  -->
     <div id="content">
       <!--  About Me-->
       <div class="container-fluid" id="AboutMe">
-        <p> Some Information About Me </p>
+        <!-- <p> Some Information About Me </p> -->
+        <table id="aboutTable">
+          <tr>
+            <td>
+              <h1> 730 Bytes about me </h1>
+            </td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td id="MeInfo">
+              <p> I'm currently a first year Computer Science Master student specializing in Data Science at the University of Southern California (USC). My expected graduation is May 2020 and on track to achieve this benchmark on my journey! As a student, I am not only actively looking for internships, but also participating in projects that benefits communities through Computer Science.</p>
+              <br>
+              <p> My currently active projects include using neighborhood and random forest algorithms to automate detection and highlighting of lesions in stroke patients MRI scans, and using a Python model trained with KNN, Naive Bayes, Logistic Regression, and Linear SVM models over an Amazon dataset of over 12 million reviews to recommend ratings for a user's reviews.  </p>
+            </td>
+            <td id="Project_Links">
+              <P> More description about my projects here.</p>
+                <br>
+              <a href=#projects> Chronic Stroke Lesion detection </a>
+              <br> <br>
+              <a href=#projects> Amazon Review Ratings Recommender </a>
+            </td>
+          </tr>
+        </table>
       </div>
       <!-- Content of Repos -->
       <div class="container-fluid" id="repos">
-        <p> Information here for Repos </p>
+        <!-- <p> Consider doing image overlay link for project Repo </p> -->
+        <!-- <p> Under Construction! <p> -->
+        <table>
+          <tr>
+            <td>
+              <h1> Projects 2014 - Now</h1>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+
       </div>
       <!--  General Information -->
       <div class="container-fluid" id="GenInfo">
-        <p> Just some general information here </p>
+        <p> Under Construction! </p>
       </div>
       <!-- Social Information/Footer -->
       <div class="container-fluid" id="Social">
-        <p> Blog Information </p>
-        <a> Github </a>
-        <a> Linkedin </a>
-        <a> BlogLink </a>
+        <a href="https://github.com/JamesonThai"> Github </a>
+        <a href="https://www.linkedin.com/in/jamesonthai/"> Linkedin </a>
+        <a onclick="notYetLinked()"> BlogLink </a>
       </div>
     </div>
   </body>
   <!-- Scripts -->
   <script src="JavaScript/navbarsticky.js"></script>
   <script src="JavaScript/hover.js"></script>
+  <script src="JavaScript/alerts.js"></script>
 </html>
