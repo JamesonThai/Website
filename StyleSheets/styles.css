@@ -18,7 +18,9 @@ body,html{
 a: hover{
   cursor: pointer;
 }
-
+a{
+  color: inherit;
+}
 /*  Body */
 /* https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp  */
 /*
