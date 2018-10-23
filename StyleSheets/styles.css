@@ -11,7 +11,7 @@ body,html{
   height:100%;
 }
 
-* {
+*{
   box-sizing: border-box;
 }
 
@@ -73,9 +73,12 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
   /* Make navbar sticky  */
 .sticky {
   position: fixed;
-  top: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
+  z-index: 2
 }
+
 
 /* bg-img */
 #header, #repos, #Social{
@@ -103,6 +106,7 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
   font-weight: 600;
   color: white;
 }
+
 #AboutMe h1{
   font-size: 6.5vw;
 }
@@ -131,20 +135,24 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
   display: flex;
   justify-content: center;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 #repos h1{
+  background-color: rgba(0,0,0,0.5);
   font-size: 6.5vw;
   font-family:'Open Sans', sans-serif;
   font-weight: 600;
   color: white;
-  text-decoration-color: white;
+  /* text-decoration-color: #737a7e; */
+  border: 3px solid #d15920;
+  padding: 20px;
 }
 
   /*  GenInfo */
-#GenInfo{
+#Fun{
   /* background-image: url("../imgAssets/architecture-background-buildings-218983.jpg"); */
-  background-color: #3B5998 ;
+  background-color: #3B5998;
   text-decoration-color: white;
   text-align: center;
   font-size: 8vw;
@@ -156,4 +164,30 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 #Social{
   /* background-image: url("../imgAssets/SoccerFieldOG.jpg"); */
   background-image: url("../imgAssets/architecture-background-buildings-218983.jpg");
+}
+
+#Social table{
+  position: relative;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#CardItems td{
+  padding: 0px 5px;
+  width: 25%;
+  padding: 0 5px;
+}
+#CardItems tr{
+  margin: 0 -5px;
+}
+
+.card{
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  font-size: 2vw;
 }

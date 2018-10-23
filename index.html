@@ -8,9 +8,12 @@
     <title> Jam-The-Son </title>
     <!-- Bootstrap Call -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Calling Stylesheet -->
     <link rel="stylesheet" type="text/css" href ="StyleSheets/styles.css">
+    <!-- Using HoverStylesheet http://ianlunn.github.io/Hover/-->
+    <link rel="stylesheet" type="text/css" media="all" href="StyleSheets/Hover-master/css/hover.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/fontawesome/css/fontawesome.min.css">
   </head>
   <!-- Body Information -->
   <body>
@@ -23,9 +26,9 @@
     <!--  Navigation Bar -->
     <nav id ="NavBar">
       <a class = "active" href="index.html" >  Home  </a>
-      <a href="#projects" onclick="notYetLinked()"> <span id="tab1"> Projects </span> </a>
+      <a href="Projects.html" onclick="notYetLinked()"> <span id="tab1"> Projects </span> </a>
       <a href="#aboutMe" onclick="notYetLinked()"> <span id="tab2"> FAQ </span> </a>
-      <a href="#contact" onclick="notYetLinked()"> <span id="tab3"> Contact </span> </a>
+      <a href="#Fun" onclick="notYetLinked()"> <span id="tab3"> Fun </span> </a>
       <a href="#blog" onclick="notYetLinked()"> <span id="tab4"> Blog </span> </a>
     </nav>
     <!-- Content  -->
@@ -59,26 +62,57 @@
       </div>
       <!-- Content of Repos -->
       <div class="container-fluid" id="repos">
-        <!-- <p> Consider doing image overlay link for project Repo </p> -->
-        <!-- <p> Under Construction! <p> -->
         <table>
           <tr>
             <td>
-              <h1> Projects 2014 - Now</h1>
+              <a href = "Projects.html"> <h1 class ="hvr-bounce-to-right"> Projects 2014 -> Present</h1> </a>
             </td>
           </tr>
         </table>
 
       </div>
-      <!--  General Information -->
-      <div class="container-fluid" id="GenInfo">
-        <p> Under Construction! </p>
+      <!--  Fun -->
+      <div class="container-fluid" id="Fun">
+        <p> Fun part Under Construction! Stay tuned! </p>
       </div>
       <!-- Social Information/Footer -->
       <div class="container-fluid" id="Social">
-        <a href="https://github.com/JamesonThai"> Github </a>
-        <a href="https://www.linkedin.com/in/jamesonthai/"> Linkedin </a>
-        <a onclick="notYetLinked()"> BlogLink </a>
+        <table>
+          <tr id ="CardItems">
+            <td>
+              <div class = "card">
+                <i class = "fa fa-paragraph" aria-hidden="true"> </i>
+                 <p> Blog </p>
+              </div>
+            </td>
+            <td>
+              <div class = "card">
+                <!-- <a href="https://github.com/JamesonThai"> Github </a> -->
+                <i class = "fa fa-leaf" aria-hidden="true"> </i>
+                <p> Github </p>
+              </div>
+            </td>
+            <td>
+              <div class = "card">
+                <i class = "fa fa-leaf" aria-hidden="true"> </i>
+                <p> Linkedin </p>
+              </div>
+              <!-- <a href="https://www.linkedin.com/in/jamesonthai/"> Linkedin </a> -->
+            </td>
+            <td>
+              <div class ="card">
+                <i class = "fa fa-pray" aria-hidden="true"> </i>
+                <p> Projects </p>
+              </div>
+            </td>
+            <td>
+              <div class="card">
+                <i class = "fa fa-reddit" aria-hidden="true"> </i>
+                <p> FAQ </p>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
