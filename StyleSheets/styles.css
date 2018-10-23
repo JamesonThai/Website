@@ -147,7 +147,8 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
   font-weight: 600;
   color: white;
   /* text-decoration-color: #737a7e; */
-  border: 3px solid #d15920;
+  /* border: 3px solid #d15920; */
+  border: 3px solid white;
   padding: 20px;
 }
 
@@ -193,3 +194,5 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
   color: white;
   font-size: 2vw;
 }
+
+/* Projects.html */
