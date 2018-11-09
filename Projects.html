@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--  Head Information -->
+
   <head>
     <!-- Meta Tags  -->
     <meta charset="utf-8">
@@ -9,24 +10,273 @@
     <!-- Bootstrap Call -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Calling Stylesheet -->
-    <link rel="stylesheet" type="text/css" href ="StyleSheets/styles.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/styles.css">
     <!-- Using HoverStylesheet http://ianlunn.github.io/Hover/-->
     <link rel="stylesheet" type="text/css" media="all" href="StyleSheets/Hover-master/css/hover.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
   <!-- Body Information -->
+
   <body>
     <!--  Creation of header -->
     <!--  Navigation Bar -->
-    <nav id ="NavBar">
-      <a href="index.html" >  <span id="tab1"> Home  </span> </a>
-      <a href="Projects.html" class="active"> Projects  </a>
-      <a href="#aboutMe" onclick="notYetLinked()"> <span id="tab2"> FAQ </span> </a>
-      <a href="#Fun" onclick="notYetLinked()"> <span id="tab3"> Fun </span> </a>
-      <a href="#blog" onclick="notYetLinked()"> <span id="tab4"> Blog </span> </a>
+    <nav class="navbar navbar-default navbar-fixed-top" id="NavBar">
+      <div class="containter">
+        <a href="index.html">  <span id="tab1"> Home  </span> </a>
+        <a href="Projects.html" class="active"> Projects  </a>
+        <a href="#aboutMe" onclick="notYetLinked()"> <span id="tab2"> FAQ </span> </a>
+        <a href="#Fun" onclick="notYetLinked()"> <span id="tab3"> Fun </span> </a>
+        <a href="#blog" onclick="notYetLinked()"> <span id="tab4"> Blog </span> </a>
+      </div>
     </nav>
     <!-- Content  -->
-
+    <div id="content">
+      <div id="start">
+        <table>
+          <tr>
+            <td>
+              <h1> List of Projects </h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#sectionAct">
+                <h1> Active Projects </h1>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#sectionHiat">
+                <h1> Hiatus Projects </h1>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#sectionPast">
+                <h1> Past Projects </h1>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <span class="anchor" id="sectionAct"></span>
+      <div id="ActiveProHeader">
+        <table>
+          <tr>
+            <td>
+              <h1> Active Projects </h1>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="ActiveProContent">
+        <table>
+          <tr>
+            <td>
+              <div id="oddTab">
+                <div id="odd">
+                  <table>
+                    <tr>
+                      <td>
+                        <h2> Chronic Stroke Lesion Detection </h2>
+                        <p id="date">September 2018 - Present</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p> • Participate in the development of Python and R software to automate lesion detection and analysis in a chronic stroke patient’s MRI scan. </p>
+                        <p> • Formulate automatic segmentation model based on Random Forests and Neighborhood algorithms for testing nearly 300 3D MRI images. </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="evenTab">
+                <div id="even">
+                  <table>
+                    <tr>
+                      <td>
+                        <h2> Amazon Review Ratings Recommender </h2>
+                        <p id="date">April 2018 - Present </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p> • Communicate with two students to develop a Python model to recommend ratings for a user’s review, achieving an accuracy of 53%. </p>
+                        <p> • Train KNN, Naïve Bayes, Logistic Regression, and Linear SVM models on an Amazon dataset of over 12 million reviews and visualize results. </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <span class="anchor" id="sectionHiat"></span>
+      <div id="HiatusProHeader">
+        <table>
+          <tr>
+            <td>
+              <h1> Hiatus Projects </h1>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="HiatusProContent">
+        <table>
+          <tr>
+            <td>
+              <div id="oddTab">
+                <div id="odd">
+                  <table>
+                    <tr>
+                      <td>
+                        <h2> Handwriting Recognition </h2>
+                        <p id="date">Project Lifetime </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p> Brief Bio</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2> Reason why on hiatus</h3>
+                          <p> Brief Explanation</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <span class="anchor" id="sectionPast"></span>
+      <div id="PastProHeader">
+        <table>
+          <tr>
+            <td>
+              <h1> Past Projects </h1>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="PastProContent">
+        <table>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <h2> Online AntiVirus </h2>
+                    <p id="date">Project Lifetime </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p> Brief Bio</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <h2> Electronic Ticket Exchange System </h2>
+                    <p id="date">Project Lifetime </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p> Brief Bio</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <h2> How in the World </h2>
+                    <p id="date">Project Lifetime </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p> Brief Bio</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <h2> Music Visualizer AVA </h2>
+                    <p id="date">Project Lifetime </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p> Brief Bio</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <h2> Twitter Bot</h2>
+                    <p id="date">Project Lifetime </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p> Brief Bio</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <h2> Travel Go - Learn New Phrases </h2>
+                    <p id="date">Project Lifetime </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p> Brief Bio</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
@@ -34,4 +284,5 @@
   <script src="JavaScript/hover.js"></script>
   <script src="JavaScript/alerts.js"></script>
   <script src="JavaScript/animation1.js"></script>
+
 </html>

@@ -10,6 +10,12 @@
 body,html{
   height:100%;
 }
+body{
+  overflow: auto;
+}
+html{
+  overflow: hidden;
+}
 
 *{
   box-sizing: border-box;
@@ -28,8 +34,9 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
   /*  Nav Bar */
 #NavBar{
   background-color: #333;
-  overflow: hidden;
+  overflow: hidden !important;
   font-family: 'Open Sans', sans-serif;
+  border-bottom:  0px;
 }
 
 #NavBar a {
@@ -196,3 +203,65 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 }
 
 /* Projects.html */
+#start{
+  background-color: #2d4845;
+}
+#ActiveProHeader, #PastProHeader, #HiatusProHeader{
+  background-color: #6e74a4;
+}
+#content{ height: 100%; }
+/*#sectionAct, #sectionPro, #sectionHiat{background-color: #2d4845;}*/
+/*{background-color: #6e74a4;}*/
+
+.anchor{
+  display: block;
+  height: 52px; /*same height as header*/
+  margin-top: -52px; /*same height as header*/
+  visibility: hidden;
+}
+
+#content h2{
+  font-size: 2.2vw;
+  /*font-size: */
+  overflow: hidden;
+  color: white;
+}
+
+#content p{
+  color: white;
+  font-size: 1.6vw;
+}
+
+#content #date{
+  font-size: 1.9vw;
+  color: white;
+}
+
+/* Odd styling*/
+#odd {
+  position: relative;
+  left: 10px;
+  width: 47%;
+  
+}
+
+#oddTab{
+  background-color: #2d3e48;
+  width: 100vw;
+  height: 50vw;
+}
+/* Even Styling */
+#even{
+  position: relative;
+  left: 54vw;
+  width: 45%;
+  right: 10px;
+  word-wrap: break-word;
+}
+#evenTab{
+    background-color: #414567;
+    width: 100vw;
+    height: 50vw;
+}
+
+body { padding-top: 52px;}
