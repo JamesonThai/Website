@@ -204,10 +204,20 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 
 /* Projects.html */
 #start{
-  background-color: #2d4845;
+  background-color: #505160;
+  color: white;
 }
 #ActiveProHeader, #PastProHeader, #HiatusProHeader{
-  background-color: #6e74a4;
+  background-color: #68829E;
+  width: 100vw;
+}
+#ActiveProHeader h1, #PastProHeader h1, #HiatusProHeader h1{
+  left: 35vw;
+  position: relative;
+  font-size: 4vw;
+  /*color: #AEBD38;*/
+  color: white;
+  /*color: #07575b;*/
 }
 #content{ height: 100%; }
 /*#sectionAct, #sectionPro, #sectionHiat{background-color: #2d4845;}*/
@@ -230,6 +240,7 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 #content p{
   color: white;
   font-size: 1.6vw;
+
 }
 
 #content #date{
@@ -239,10 +250,9 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 
 /* Odd styling*/
 #odd {
-  position: relative;
-  left: 10px;
+  padding-left: 20px;
   width: 47%;
-  
+  padding-top: 20px;
 }
 
 #oddTab{
@@ -253,13 +263,14 @@ Basic Navbar from w3 schools, to change later https://www.w3schools.com/howto/tr
 /* Even Styling */
 #even{
   position: relative;
-  left: 54vw;
-  width: 45%;
-  right: 10px;
+  left: 50vw;
+  width: 47%;
   word-wrap: break-word;
+  text-align: left;
 }
 #evenTab{
-    background-color: #414567;
+    /*background-color: #598234;*/
+    background-color: #66a5ad;
     width: 100vw;
     height: 50vw;
 }
